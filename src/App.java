@@ -6,21 +6,20 @@ public class App {
         Scanner scanner = new Scanner(System.in);
         
         // Carregar jogadores do arquivo BD.txt
-        BD bancoDeDados = new BD("BD.txt");
-        List<Jogador> jogadores = bancoDeDados.carregarJogadores();
+        List<Jogador> jogadores = Jogador.carregarJogadores("BD.txt");
 
         // Tentar efetuar login
         Jogador jogadorLogado = null;
         while (true) {
             System.out.print("Por favor, faça login.\nNome de usuário: ");
-            String loginUser  = scanner.next();
+            String loginUser   = scanner.next();
             System.out.print("Senha: ");
             String loginSenha = scanner.next();
 
             // Verificar se o jogador existe
             boolean loginValido = false;
             for (Jogador jogador : jogadores) {
-                if (jogador.login(loginUser , loginSenha)) {
+                if (jogador.login(loginUser  , loginSenha)) {
                     jogadorLogado = jogador; // Armazena o jogador logado
                     loginValido = true;
                     break;
