@@ -1,0 +1,9 @@
+Arthur
+senha123
+100.0
+Maria
+senha456
+250.0
+João
+senha789
+50.0
