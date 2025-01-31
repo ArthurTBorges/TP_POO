@@ -1,0 +1,15 @@
+Arthur
+senha123
+6.5
+Maria
+senha456
+250.0
+João
+senha789
+50.0
+Eduado
+senha
+59.0
+pele
+senha
+100.0
